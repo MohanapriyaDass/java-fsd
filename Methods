@@ -1,0 +1,14 @@
+package assistedProject;
+
+public class TestMethods {
+	public static void main(String [] args) 
+	{
+
+		Accessmodifier obj= new  Accessmodifier();
+
+		obj.methodDefault();
+		obj.methodProtected();
+		obj.methodPublic();
+		}
+
+}
