@@ -1,0 +1,27 @@
+package assistedProject;
+
+public class Typecasting 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Implicit typecasting");
+		byte a=8;
+		int b=a;
+		float c=a;
+		long d=a;	
+		double e=a;
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(e);
+		
+		System.out.println("\n");
+		System.out.println("Explicit typecasting");
+		float x=10.10f;
+		int y=(int)x;
+		System.out.println(x);
+		System.out.println(y);
+
+	}
+}
