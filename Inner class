@@ -1,0 +1,19 @@
+package assistedProject;
+
+public class innerClass {
+ private String msg="Welcome to Eclipse"; 
+	 
+	 class Inner{  
+	  void hai(){System.out.println(msg+", Let us start E-learning Inner Classes");}  
+	 }  
+
+
+	public static void main(String[] args) {
+
+		innerClass obj=new innerClass();
+		innerClass.Inner in=obj.new Inner();  
+		in.hai();  
+	}
+
+
+}
