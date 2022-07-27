@@ -1,0 +1,19 @@
+package assistedProject;
+
+abstract class Anonymousinnerclass {
+	   public abstract void display();
+	}
+
+public class annonymousinnerclass {
+	public static void main(String[] args) {
+		Anonymousinnerclass i = new Anonymousinnerclass() {
+
+		         public void display() {
+		            System.out.println("Anonymous Inner Class");
+		         }
+		      };
+		      i.display();
+		   }
+
+
+}
