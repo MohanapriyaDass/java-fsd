@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--we need to bring some xsd config from internet into this file to make it a spring config file  -->
+
+<!-- beans indicate collection of group of objects -->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <!-- bean : single object -create an object-->
+<bean id="cappucino" class="incredents.Cappucino">
+<property name="field" value="cream"></property>
+</bean>
+
+<!-- bean : single object -create an object-->
+<bean id="xpreso" class="incredents.Xpreso">
+</bean>
+
+</beans>
