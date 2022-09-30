@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function setcookie(){
+            var name1=document.f1.name.value;
+            document.cookie="username="+name1;
+            c1=document.cookie;
+            document.getElementById("myname").innerText="cookie is set";
+        }
+        function getcookie(){
+            document.getElementById("myname").innerText="your cookie"+c1;
+        }
+        function deletecookie(){
+            document.cookie=c1+";max-age=0";
+            document.cookie="";
+            c1=document.cookie;
+            document.getElementById("myname").innerText=c1+"looged out";
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        Name <input type="text" name="name">
+        <div id="myname"></div>
+        <input type="button" value="login" onclick="setcookie()">
+        <input type="button" value="get" onclick="getcookie()">
+        <input type="button" value="delete" onclick="deletecookie()">
+    </form>
+    
+</body>
+</html>

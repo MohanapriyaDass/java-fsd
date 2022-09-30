@@ -1,0 +1,28 @@
+<html>
+<title>javascript examples</title>
+<head>
+<script>
+  function checkemail(){
+ // document.getElementById("result").innerHTML="please enter the email ";
+  let name=document.getElementById("name").value;
+  let pwd=document.getElementById("pwd").value;
+console.log(name+"  "+pwd)
+if(name==""){
+   document.getElementById("result").innerText="value entered is empty ...please check"
+}
+if(pwd==""){
+   document.getElementById("resultpwd").innerText="value of password is empty ...enter value.."
+}
+  }
+</script>
+</head>
+<body>
+<form name="f1">
+Name<input type="text" name="name" id="name" onkeyup="checkemail()">
+<div id="result"></div>
+password<input type="text" name="pwd" id="pwd" onkeyup="checkemail()">
+<div id="resultpwd"></div>
+<input type="button" value="clcik">
+</form>
+</body>
+</html>

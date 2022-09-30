@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script>
+        let data='{"employee":['+'{"firstname":"john"},'+'{"firstname":"ramesh"}]}';
+        console.log(data)
+        const obj=JSON.parse(data);
+        console.log(obj)
+        
+     </script>
+  
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=obj.employee[0].firstname+" "+obj.employee[1].firstname;
+     </script>
+     
+</body>
+</html>

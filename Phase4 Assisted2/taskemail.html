@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+function checkme(){
+    let pwd1=document.getElementById("pwd").value;
+    let p1=pwd1.indexOf("@")
+    let l=pwd1.length;
+    
+    if(p1<0 || l<=8 ){
+        document.getElementById("pwd2").innerText="password shuold have @ symbol and should contain max 8 letters"
+    }
+   
+    let em=document.getElementById("email").value;
+    let e1=em.indexOf("@")
+    let e2=em.indexOf(".")
+    if(e1<0 || e2<0){
+        document.getElementById("email1").innerText="email should have @ and . symbol"
+    }
+    
+}
+   </script> 
+</head>
+<body>
+    <form id="f1">
+        Email <input type="email" name="email" id="email" onkeyup="checkme()"><br>
+        <div id="email1"></div>
+        password <input type="text" name="pwd" id="pwd" onkeyup="checkme()">
+        <div id="pwd2"></div>
+ <!--      <input type="button" value="click me" onclick="checkme()">  --> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<title>javascript examples</title>
+<head>
+   <script>
+     function Student(name){
+      this.name=name;
+      //this.getName=function(){return this.name;}//==>function call   (individual)
+     }
+     // we get individual we got individual object , o/p for s1 is displayed
+    //   var s1=new Student("ravi");
+    //   var s2=new Student("ramesh");
+    //  document.write(s1.getName())
+    //  document.write(s2.getName())
+
+   
+//tested with defining only the s1 object to the function 
+    // var s1=new Student("ravi");
+    //  s1.getName=function(){return this.name;}
+    //  var s2=new Student("ramesh");
+    //  document.write(s1.getName())
+    //  document.write(s2.getName())
+
+    
+//prototype
+    var s1=new Student("ravi");
+    Student.prototype.getName=function(){return this.name;}
+     var s2=new Student("ramesh");
+     document.write(s1.getName())
+     document.write(s2.getName())
+
+
+   </script>
+ </head>
+<body>
+
+</body>
+</html>
+

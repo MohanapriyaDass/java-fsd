@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function checkprime(){
+            let n=document.getElementById("no").value;
+            var i,flag=true;
+            for(i=2;i<n-1;i++){
+                if(n%i==0){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag==true)
+            document.getElementById("prime").innerText="Prime number"
+            else{
+            document.getElementById("prime").innerText="Not a Prime number"
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="f1">
+        Enter a number <input type="number" name="no" id="no" onkeyup="checkprime()">
+        <div id="prime"></div>
+<!--<input type="button" value="checknumber" onclick="checkprime()">  -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div id="place"></div>
+ <script>
+var e1=document.getElementById("place");
+var arr=[2,3,4,5,6];
+var newarr=arr.map(function(val,index){
+
+   return {key:index,value:val*val};
+})
+console.log(newarr)
+e1.innerHTML=JSON.stringify(newarr);
+
+//another demo
+var m=new Map();
+m.set("fname","kalvi")
+m.set("lname","M")
+m.set("friend 1","sow")
+m.set("friend 2","savi")
+console.log(m)
+console.log("m has friend 3 ?"+m.has("friend 3"))
+console.log("get value for key = friend 3 - "+ m.get("friend 3")); 
+console.log("delete element with key = friend 2 - " + m.delete("friend 2")); 
+m.clear()
+console.log(m)
+</script>
+
+</body>
+</html>
