@@ -1,0 +1,17 @@
+.para{
+    font-size: large;
+    color:chocolate;
+    font-style: normal;
+    padding:10px 30px;
+    
+}
+#cardid{
+    font-size: large;
+    font-style: normal;
+    color:darkmagenta;
+    font-weight:bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color:lightgreen;
+}
