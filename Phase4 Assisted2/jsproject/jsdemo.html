@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Javascript</title>
+    <!-- without using function-->
+    <script >
+        
+        function num(){
+            var n=parseInt(window.prompt("Enter any positive number ="))
+            var i,flag=true;
+            for(i=2;i<n-1;i++){
+                if(n%i==0){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag==true)
+            document.write("prime number")
+            else{
+                alert("not a prime number")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="click me" onclick="num()">
+    </form>
+</body>
+</html>

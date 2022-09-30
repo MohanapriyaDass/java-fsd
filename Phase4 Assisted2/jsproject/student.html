@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+    <h1 align="center">Student Registration</h1>
+    <form name="f1">
+        <table align="center">
+            <tr><td>Student id</td><td><input type="text" name="sid" ></td></tr>
+            <tr><td>Student Name</td><td><input type="text" name="name" ></td></tr>
+            <tr><td>Password</td><td><input type="password" name="pwd" placeholder="enter password" ></td></tr>
+            <tr><td>Gender</td><td><input type="radio" id="male" name="gender">Male <input type="radio" name="gender" id="female">Female</td  ></tr>
+            <tr><td>Favourite Sports</td><td><input type="checkbox" id="cricket" name="cricket">Cricket<input type="checkbox" id="football" name="Football">Football </td ></tr>
+            <tr><td>DOB</td><td><input type="date" name="bday" id="bday" ></td></tr>
+            <tr>
+                <td>List of Subjects</td>
+                <td>
+                    <select id="find">
+                        <option value=""></option>
+                        <option value="1">C</option>
+                        <option value="2">Java</option>
+                        <option value="3">Python</option>
+                    </select>
+                </td  >
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="text1" rows="10" cols="50"></textarea> </td>
+            </tr>
+            <tr>
+                <td></td></td><td><input type="submit" onclick="checkfn()"></td></td>
+            </tr>
+            
+        </table>
+    </form> 
+</body>
+</html>
