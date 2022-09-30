@@ -1,0 +1,30 @@
+<!-- Data Binding -->
+<h1>{{value}}</h1>
+<img src={{path}} height="300" width="500">
+<h1 class={{cprop}}>{{value}}</h1>
+
+<!-- Property Binding-->
+Name:<input type="text"><button [disabled]=isdisabled>submit</button>
+Id<input type="text" [hidden]=ishidden>
+
+<!-- class binding-->
+<h1 [class]="{c1:applyc1}">{{value}}</h1>
+
+<!-- Style binding-->
+<h1 style="color:{{cval}}">{{value}}</h1>
+<h1 [style.color]="hasError?'red':'green'">{{value}}</h1>
+
+<!-- Event Binding-->
+<button (click)="incr()">Increments</button>
+<button (click)="decr()">Decrement</button>
+<h1>
+  counter is {{counter}}
+</h1>
+
+name<input type="text" (input)="updatename($event)">
+<h1>Your name is {{name}}</h1>
+
+<!-- two way binding-->
+name:<input type="text" [(ngModel)]="name1">
+<button (click)="updatename1()">update</button>
+<h1>Your name is {{name1}}</h1>
