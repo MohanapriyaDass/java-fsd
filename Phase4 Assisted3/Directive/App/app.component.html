@@ -1,0 +1,58 @@
+<!-- Structural Directivies-->
+
+<!-- ngIf -->
+<h3 *ngIf="show">Student Registration</h3>
+
+<!-- ngif else  -->
+<h1 *ngIf="!show1 else sample">loading...</h1>
+<ng-template #sample>{{value}}</ng-template>
+<br>
+
+<!-- ngif then else -->
+<h1 *ngIf="!show2; then display; else sample"></h1>
+<ng-template #display>{{value1}}</ng-template>
+<ng-template #sample>{{cval}}</ng-template>
+
+<!--ngFor -->
+<table border="1">
+  <tr>
+      <th>mobilename</th>
+  <th>index</th>
+  <th>first</th>
+  <th>last</th>
+  <th>odd</th>
+  <th>even</th>
+  </tr>
+  
+  <tr *ngFor="let m of mobiles;index as i;first as f;last as l;odd as o;even as e">
+      <td>{{m}}</td>
+      <td>{{i}}</td>
+  
+      <td>{{f}}</td>
+  
+      <td>{{l}}</td>
+  
+      <td>{{o}}</td>
+  
+      <td>{{e}}</td>
+  
+  </tr>
+  </table>
+  
+  <br>
+  <table border="1">
+      <tr *ngFor="let m of mobileseries">
+          <td>{{m.id}}</td>
+          <td>{{m.name}}</td>
+      </tr>    
+  </table>
+
+ <!--ngSwitch --> 
+ Provide operator<input type="text" [(ngModel)]="op">
+<div [ngSwitch]="op"> 
+<div *ngSwitchCase="'+'">{{num1+num2}}</div>
+<div *ngSwitchCase="'-'">{{num1-num2}}</div>
+<div *ngSwitchCase="'*'">{{num1*num2}}</div>
+<div *ngSwitchCase="'/'">{{num1/num2}}</div>
+<div *ngSwitchDefault>Invalid Match</div>
+</div> 
