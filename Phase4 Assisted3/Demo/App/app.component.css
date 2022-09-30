@@ -1,0 +1,16 @@
+p{
+    background-color: coral;
+   padding: 30px 30px;
+}
+#mar1{
+    background-color: chartreuse;
+
+}
+.special{
+    color:red;
+    font-style: italic;
+}
+.c1{
+    border: 5px double brown;
+    color:blue;
+}

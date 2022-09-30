@@ -1,0 +1,33 @@
+<!-- Usage of marquee-->
+<marquee id="mar1"><h1 >Hi Simplilearn Users</h1></marquee >
+
+<!-- Task change color by entering name of the color-->
+ Enter color:<input type="text" (input)="updatecolor($event)">
+ <h1 style="color:{{newcolor}}">color changer</h1>
+
+<!-- Task copy of your name will be displayed--> 
+name1:<input type="text" [(ngModel)]="name1">
+<button (click)="updatename1()">update</button>
+<h1>Your name is {{name1}}</h1>
+copy name:<input type="text" value="{{name1}}">
+  
+<!-- Pipes (Predefined)-->
+<h4>{{value | uppercase}}</h4>
+<h4>{{value | titlecase}}</h4>
+<h4>{{salary | currency}}</h4>
+<h4>{{salary | currency:'INR'}}</h4>
+<h4>{{salary | percent}}</h4>
+<h4>{{date | date}}</h4>
+<h4>{{date | date:'dd/MM/yy'}}</h4>
+<h4>{{mobileseries | json}}</h4>
+
+<!-- Pipes (custom pipes)-->
+<h5>{{wish | transpipe:"lower":4}}</h5> 
+
+<!-- Pipe Task-->
+<h6>{{person | transpipe:greet}}</h6>
+  
+<!-- Routing -->
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer> 
